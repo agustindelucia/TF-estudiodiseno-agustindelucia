@@ -1,0 +1,650 @@
+@charset "UTF-8";
+/* receteo de margin a la pagina */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body h2 { /* formato estudio diseño */
+  background-color: lightgray;
+  color: #333f50; /* variables.scss */
+  font-family: "Roboto", sans-serif;
+}
+body h3 { /* formato estudio diseño */ }
+ .estudio-diseno {
+  background-color: black;
+  color: whitesmoke; /* variables.scss */
+  font-family: "Roboto", sans-serif;
+}
+body img { /* tamaño imagen header-portada */
+  width: 100%;
+}
+body .carousel-item { /* texto carrucel */ }
+body .carousel-item p {
+  color: #333f50; /* color parrafo carrucel */
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+body .carousel-item h5 {
+  color: #333f50; /* color h5 carrucel */
+  font-weight: bold;
+}
+
+header {
+  /* color fondo nav */
+  background-color: #333f50; /* variables.scss */
+  /* posicionamiento del nav para que quede flotando */
+  position: sticky;
+  top: 0%;
+}
+header nav ul { /* estilo nav */
+  list-style: none;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+header nav ul li a { /* estilo nav */
+  color: white;
+  text-decoration: none;
+}
+
+main h1 { /* estilo titulo principal */
+  background: rgb(51, 63, 80);
+  /* gradiente titulo principal */
+  background: linear-gradient(90deg, rgb(51, 63, 80) 18%, rgb(76, 76, 77) 45%, rgb(51, 63, 80) 68%);
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  padding: 30px 0px 30px 0px;
+  /* sepacion entre bloque nav y bloque titulo principal */
+  margin: 5% 0px;
+}
+main h2 {
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+}
+main h3 { /* estilo sub titulos  */
+  color: #333f50; /* variables.scss */
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  margin: 40px;
+}
+main h4 { /* estilo software */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 40px 0px 5px 0px; /* sepacion entre bloque parrafos y bloque software y banner */
+}
+main p { /* estilo parrafos */
+  color: whitesmoke; /* variables.scss */
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 20px 10px; /* margen parrafo con margen pantalla */
+}
+main span { /* estilo seccion de texto */
+  background-color: #333f50; /* variables.scss */
+  color: white;
+  font-weight: bold;
+}
+main img { /* tamaño imagenes contenido pag */
+  width: 80%;
+  margin: 0% 20% 0% 10%;
+}
+main div img { /* margenes imagenes servicios */
+  margin: 5% 3% 5% 3%;
+}
+main li { /* sepacion entre navs */
+  margin: 10px;
+}
+main .medidas-img-sobremi {
+  width: 670px;
+  height: 500px;
+  /* mixin.scss */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* mixin.scss */
+}
+main .transicion { /* moviemiento boton certificados */
+  transition: 1s;
+}
+main .transicion:hover { /* moviemiento boton certificados */
+  transform: translate(15px, 10px);
+}
+main .card-text { /* tarjetas card parrafos index */
+  color: #3a3a3a;
+}
+
+/* box model - rectangulo sobre navs {} */
+.box-model {
+  border: solid;
+  color: #333f50; /* variables.scss */
+}
+
+/*animacion zoom y color palabras nav cuando clikeas - pseudoclase nav*/
+.enlaceuno:hover {
+  color: black;
+  background-color: lightgray;
+  zoom: 130%;
+}
+
+/* color letras navbar */
+.nav-link {
+  color: whitesmoke; /* variables.scss */
+}
+
+/* color icono navbar hamburguesa */
+.navbar-toggler {
+  border-color: whitesmoke; /* variables.scss */
+  background-color: lightgray;
+}
+
+/* pie de pagina */
+footer {
+  color: gray;
+  text-align: center;
+  background-color: whitesmoke; /* variables.scss */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Media query para MOBILE */
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: black; /* color fondo */
+  }
+  main h1 {
+    font-size: 35px; /* tamaño titulo h1 mobile */
+  }
+  main section p {
+    color: whitesmoke; /* variables.scss */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  main section h3 {
+    color: whitesmoke; /* variables.scss */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+  }
+  main div h3 { /* subtitulos porfolio mobile */
+    color: whitesmoke; /* variables.scss */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+  }
+  main div p { /* centrado y margenes parrafos mobile */
+    text-align: justify;
+    margin: 0% 5% 0% 5%;
+  }
+  main div img { /* centrado img/contactos.html mobile */
+    text-align: center;
+  }
+  main .contactos-redes { /* centrado img/contactos.html mobile */
+    text-align: center;
+  }
+  main .medidas-img-sobremi { /* ubicacion y medidas img sobre mi.html mobile */
+    width: 220px;
+    height: 300px;
+    /* mixin.scss */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* mixin.scss */
+    margin: 0% 10% 0% 20%;
+  }
+  /* grid 1 columna 11 filas sobremi/certificados.html mobile */
+  .certificados {
+    align-items: center;
+    padding: 0% 10% 0% 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 2/1/3/2;
+  }
+  .div3 {
+    grid-area: 3/1/4/2;
+  }
+  .div4 {
+    grid-area: 4/1/5/2;
+  }
+  .div5 {
+    grid-area: 5/1/6/2;
+  }
+  .div6 {
+    grid-area: 6/1/7/2;
+  }
+  .div7 {
+    grid-area: 7/1/8/2;
+  }
+  .div20 {
+    grid-area: 8/1/9/2;
+  }
+  .div9 {
+    grid-area: 9/1/10/2;
+  }
+  .div10 {
+    grid-area: 10/1/11/2;
+  }
+  .div11 {
+    grid-area: 11/1/12/2;
+  }
+  /* grid 7 filas 1 columnas img porfolio mobile */
+  .img-porfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    list-style-type: none;
+    text-align: center;
+  }
+  .div100 {
+    grid-area: 1/1/2/2;
+  }
+  .div101 {
+    grid-area: 2/1/3/2;
+  }
+  .div102 {
+    grid-area: 3/1/4/2;
+  }
+  .div103 {
+    grid-area: 4/1/5/2;
+  }
+  .div104 {
+    grid-area: 5/1/6/2;
+  }
+  .div105 {
+    grid-area: 6/1/7/2;
+  }
+  .div106 {
+    grid-area: 7/1/8/2;
+  }
+  /* grid 4 filas 2 columnas img servicios mobile */
+  .img-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 1/2/2/3;
+  }
+  .div8 {
+    grid-area: 2/1/3/2;
+  }
+  .div4 {
+    grid-area: 2/2/3/3;
+  }
+  .div5 {
+    grid-area: 3/1/4/2;
+  }
+  .div6 {
+    grid-area: 3/2/4/3;
+  }
+  .div7 {
+    grid-area: 4/1/5/2;
+  }
+  /* grid organizacion textos.index.html MOBILE */
+  .text-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
+  .div20 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 15% 3% 0% 3%;
+    grid-area: 1/1/2/2;
+  }
+  .div21 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 0% 3% 0% 3%;
+    grid-area: 2/1/3/2;
+  }
+  .div22 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 0% 3% 0% 3%;
+    grid-area: 3/1/4/2;
+  }
+  .div23 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 0% 3% 0% 3%;
+    grid-area: 4/1/5/2;
+  }
+  .div24 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 0% 3% 0% 3%;
+    grid-area: 5/1/6/2;
+  }
+  .div25 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 0% 3% 0% 3%;
+    grid-area: 6/1/7/2;
+  }
+  footer {
+    margin: 15% 0% 0% 0%;
+  }
+}
+/* Media query para TABLET */
+@media only screen and (min-width: 501px) and (max-width: 968px) {
+  body {
+    background-color: #7b7e7e; /* color fondo */
+  }
+  /* ubicacion y medidas img sobre mi.html tablet */
+  .medidas-img-sobremi {
+    width: 370px;
+    height: 500px;
+    /* mixin.scss */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* mixin.scss */
+    margin: 0% 10% 0% 27%;
+  }
+  /* grid 3 filas 3 columnas img porfolio tablet */
+  .img-porfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 1/2/2/3;
+  }
+  .div3 {
+    grid-area: 2/1/3/2;
+  }
+  .div4 {
+    grid-area: 2/2/3/3;
+  }
+  .div5 {
+    grid-area: 3/1/4/2;
+  }
+  .div6 {
+    grid-area: 3/2/4/3;
+  }
+  .div7 {
+    grid-area: 4/1/5/2;
+  }
+  /* grid 4 filas 2 columnas img servicios tablet */
+  .img-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 1/2/2/3;
+  }
+  .div3 {
+    grid-area: 2/1/3/2;
+  }
+  .div4 {
+    grid-area: 2/2/3/3;
+  }
+  .div5 {
+    grid-area: 3/1/4/2;
+  }
+  .div6 {
+    grid-area: 3/2/4/3;
+  }
+  .div7 {
+    grid-area: 4/1/5/2;
+  }
+}
+/* Media query para DESKTOP */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #3a3a3a; /* color fondo */
+  }
+  .estudio-diseno { /* formato estudio diseño */
+    background-color: black;
+    color: whitesmoke; /* variables.scss */
+    font-family: "Roboto", sans-serif;
+  }
+  main div h3 {
+    color: whitesmoke; /* variables.scss */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 30px; /* tamaño subtitulos h3*/
+  }
+  main div img { /* tamaño imagenes contenido pag veeeeeeeeeeer*/
+    width: 80%;
+  }
+  main section p { /* color y estilo de parrafo*/
+    color: whitesmoke; /* variables.scss */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  main section h3 { /* color y estilo de subtitulos*/
+    color: whitesmoke; /* variables.scss */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%; /* tamaño de texto */
+  }
+  main .medidas-img-sobremi { /* medidas img sobre mi con mixin */
+    width: 520px;
+    height: 700px;
+    /* mixin.scss */
+  }
+  main .boton-certificados {
+    width: 500px;
+    height: 350%;
+    /* mixin.scss */
+    margin: 0% 20% 0% 65%;
+    list-style-type: none;
+  }
+  /* grid organizacion textos.index.html desktop */
+  .text-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    text-align: center; /* texto centrado dentro de los recuadros del parrofos index */
+  }
+  .div20 {
+    border: solid; /* recuadro blanco parrafos index */
+    color: whitesmoke;
+    margin: 15% 0% 0% 3%;
+    grid-area: 1/1/2/2;
+  }
+  .div21 {
+    border: solid;
+    color: whitesmoke;
+    margin: 15% 0% 0% 0%;
+    grid-area: 1/2/2/3;
+  }
+  .div22 {
+    border: solid;
+    color: whitesmoke;
+    margin: 15% 3% 0% 0%;
+    grid-area: 1/3/2/4;
+  }
+  .div23 {
+    border: solid;
+    color: whitesmoke;
+    margin: 0% 0% 5% 3%;
+    grid-area: 2/1/3/2;
+  }
+  .div24 {
+    border: solid;
+    color: whitesmoke;
+    margin: 0% 0% 5% 0%;
+    grid-area: 2/2/3/3;
+  }
+  .div25 {
+    border: solid;
+    color: whitesmoke;
+    margin: 0% 3% 5% 0%;
+    grid-area: 2/3/3/4;
+  }
+  /* grid 1 fila 2 columnas contactos y redes desktop */
+  .contactos-redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 1/2/2/3;
+  }
+  .div3 {
+    grid-area: 1/3/2/4;
+  }
+  .div4 {
+    grid-area: 2/1/3/2;
+  }
+  .div5 {
+    grid-area: 2/2/3/3;
+  }
+  .div6 {
+    grid-area: 2/3/3/4;
+  }
+  .div7 {
+    grid-area: 3/2/4/3;
+  }
+  /* grid 3 filas 3 columnas img porfolio desktop */
+  .img-porfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    list-style-type: none;
+  }
+  .div1 {
+    text-align: center;
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    text-align: center;
+    grid-area: 1/2/2/3;
+  }
+  .div8 {
+    text-align: center;
+    grid-area: 1/3/2/4;
+  }
+  .div4 {
+    text-align: center;
+    grid-area: 2/1/3/2;
+  }
+  .div5 {
+    text-align: center;
+    grid-area: 2/2/3/3;
+  }
+  .div6 {
+    text-align: center;
+    grid-area: 2/3/3/4;
+  }
+  .div7 {
+    text-align: center;
+    grid-area: 3/2/4/3;
+  }
+  /* grid 4 filas 2 columnas img servicios desktop */
+  .img-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 1/2/2/3;
+  }
+  .div8 {
+    grid-area: 1/3/2/4;
+  }
+  .div4 {
+    grid-area: 2/1/3/2;
+  }
+  .div5 {
+    grid-area: 2/2/3/3;
+  }
+  .div6 {
+    grid-area: 2/3/3/4;
+  }
+  .div7 {
+    grid-area: 3/2/4/3;
+  }
+  /* grid img y parrafos sobremi.html desktop */
+  .prueba-img-sobremi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/3/2;
+  }
+  .div2 {
+    text-align: justify;
+    margin: 0% 5% 0% 0%;
+    grid-area: 1/2/2/3;
+  }
+  .div3 {
+    text-align: justify;
+    margin: 0% 5% 0% 0%;
+    grid-area: 2/2/3/3;
+  }
+  /* estilo imagen principal certificados.html */
+  .medidas-certificados {
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    margin: 3% 10% 2% 25%;
+  }
+  .mb-3 { /* formulario contactos margen */
+    margin: 0% 20% 0% 20%;
+  }
+  footer {
+    margin: 10% 0% 0% 0%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

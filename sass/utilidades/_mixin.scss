@@ -1,0 +1,19 @@
+// con paremetros (mas detallados para cada etiqueta)
+
+@mixin medidas($width, $heigh) {
+    width: $width; // ancho img
+    height: $heigh; // altura img
+
+}
+
+
+
+
+// sin parametros (propiedades mas globales)
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
