@@ -11,7 +11,7 @@ body h2 { /* formato estudio diseño */
   font-family: "Roboto", sans-serif;
 }
 body h3 { /* formato estudio diseño */ }
- .estudio-diseno {
+body h3 .estudio-diseno {
   background-color: black;
   color: whitesmoke; /* variables.scss */
   font-family: "Roboto", sans-serif;
@@ -155,6 +155,10 @@ footer {
   body {
     background-color: black; /* color fondo */
   }
+  .estudio-diseno {
+    background-color: black;
+    color: whitesmoke;
+  }
   main h1 {
     font-size: 35px; /* tamaño titulo h1 mobile */
   }
@@ -199,6 +203,10 @@ footer {
     /* mixin.scss */
     margin: 0% 10% 0% 20%;
   }
+  main .boton-certificados { /* centrado boton certificados sobremi.html */
+    text-align: center;
+    list-style-type: none;
+  }
   /* grid 1 columna 11 filas sobremi/certificados.html mobile */
   .certificados {
     align-items: center;
@@ -209,37 +217,37 @@ footer {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .div1 {
+  .div180 {
     grid-area: 1/1/2/2;
   }
-  .div2 {
+  .div181 {
     grid-area: 2/1/3/2;
   }
-  .div3 {
+  .div182 {
     grid-area: 3/1/4/2;
   }
-  .div4 {
+  .div183 {
     grid-area: 4/1/5/2;
   }
-  .div5 {
+  .div184 {
     grid-area: 5/1/6/2;
   }
-  .div6 {
+  .div185 {
     grid-area: 6/1/7/2;
   }
-  .div7 {
+  .div186 {
     grid-area: 7/1/8/2;
   }
-  .div20 {
+  .div187 {
     grid-area: 8/1/9/2;
   }
-  .div9 {
+  .div188 {
     grid-area: 9/1/10/2;
   }
-  .div10 {
+  .div189 {
     grid-area: 10/1/11/2;
   }
-  .div11 {
+  .div190 {
     grid-area: 11/1/12/2;
   }
   /* grid 7 filas 1 columnas img porfolio mobile */
@@ -272,6 +280,22 @@ footer {
   }
   .div106 {
     grid-area: 7/1/8/2;
+  }
+  /* grid 2 filas 1 columna img y parrafos marketing.html mobile */
+  .grid-marketing {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    text-align: center;
+    list-style-type: none;
+  }
+  .div500 {
+    grid-area: 1/1/2/2;
+  }
+  .div501 {
+    grid-area: 2/1/3/2;
   }
   /* grid 4 filas 2 columnas img servicios mobile */
   .img-servicios {
@@ -347,25 +371,77 @@ footer {
     margin: 0% 3% 0% 3%;
     grid-area: 6/1/7/2;
   }
+  .grid-render {
+    text-align: center;
+  }
+  .banner-software {
+    background-color: white;
+    text-align: center;
+  }
   footer {
     margin: 15% 0% 0% 0%;
+    background-color: black;
+    font-size: 80%;
   }
 }
 /* Media query para TABLET */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   body {
-    background-color: #7b7e7e; /* color fondo */
+    background-color: #7b7e7e; /* color fondo tablet */
   }
-  /* ubicacion y medidas img sobre mi.html tablet */
-  .medidas-img-sobremi {
-    width: 370px;
-    height: 500px;
-    /* mixin.scss */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* mixin.scss */
-    margin: 0% 10% 0% 27%;
+  main h3 { /* subtitulos tablet */
+    color: whitesmoke; /* variables.scss */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 150%;
+  }
+  main div h3 { /* subtitulos h3 cards index.html tablet */
+    color: whitesmoke; /* variables.scss */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 120%;
+  }
+  main p { /* centrado y margenes parrafos tablet */
+    text-align: justify;
+    margin: 0% 5% 0% 5%;
+  }
+  main img { /* centrado img/contactos.html tablet */
+    text-align: center;
+  }
+  .medidas-img-sobremi { /* centrado img sobremi.html */
+    margin: 0% 10% 0% 10%;
+  }
+  .boton-certificados { /* centrado boton certificados sobremi.html */
+    text-align: center;
+    list-style-type: none;
+  }
+  .estudio-diseno { /* fondo y color de letra esudio de diseño */
+    background-color: black;
+    color: whitesmoke;
+  }
+  .contactos-redes { /* alineacion img contactos.html tablet */
+    text-align: center;
+  }
+  /* grid 2 filas 1 columna img y parrafos marketing.html tablet */
+  .grid-marketing {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    list-style-type: none;
+  }
+  .div500 {
+    grid-area: 1/1/2/2;
+  }
+  .div501 {
+    margin: 0% 0% 0% 0%;
+    grid-area: 2/1/3/2;
   }
   /* grid 3 filas 3 columnas img porfolio tablet */
   .img-porfolio {
@@ -374,6 +450,8 @@ footer {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    list-style-type: none;
+    text-align: center;
   }
   .div1 {
     grid-area: 1/1/2/2;
@@ -403,6 +481,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin: 0% 5% 0% 8%;
   }
   .div1 {
     grid-area: 1/1/2/2;
@@ -424,6 +503,28 @@ footer {
   }
   .div7 {
     grid-area: 4/1/5/2;
+  }
+  .mb-3 { /* formulario contactos margen tablet */
+    margin: 0% 12% 0% 12%;
+  }
+  .certificados { /* alineacion img certificados.html tablet */
+    text-align: center;
+    width: 800px;
+    height: 700px;
+  }
+  .grid-render { /* alineacion img render.html tablet */
+    text-align: center;
+  }
+  .footer-certificados { /* margin footer certificados.html tablet */
+    margin: 630% 0% 0% 0%;
+  }
+  .banner-software {
+    background-color: white;
+    text-align: center;
+  }
+  footer {
+    background-color: black;
+    margin: 3% 0% 0% 0%;
   }
 }
 /* Media query para DESKTOP */
@@ -522,6 +623,8 @@ footer {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    text-align: center;
+    margin: 5% 0% 0% 0%;
   }
   .div1 {
     grid-area: 1/1/2/2;
@@ -543,6 +646,10 @@ footer {
   }
   .div7 {
     grid-area: 3/2/4/3;
+  }
+  .parrafo-contactos {
+    text-align: center;
+    margin: 0% 0% 5% 0%;
   }
   /* grid 3 filas 3 columnas img porfolio desktop */
   .img-porfolio {
@@ -631,6 +738,49 @@ footer {
     margin: 0% 5% 0% 0%;
     grid-area: 2/2/3/3;
   }
+  /* grid 2 columnas 6 filas render.html desktop */
+  .grid-render {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+  }
+  .div420 {
+    grid-area: 1/1/2/2;
+  }
+  .div421 {
+    grid-area: 1/2/2/3;
+  }
+  .div422 {
+    grid-area: 2/1/3/2;
+  }
+  .div423 {
+    grid-area: 2/2/3/3;
+  }
+  .div424 {
+    grid-area: 3/1/4/2;
+  }
+  .div425 {
+    grid-area: 3/2/4/3;
+  }
+  .div426 {
+    grid-area: 4/1/5/2;
+  }
+  .div427 {
+    grid-area: 4/2/5/3;
+  }
+  .div428 {
+    grid-area: 5/1/6/2;
+  }
+  .div429 {
+    grid-area: 5/2/6/3;
+  }
+  .div430 {
+    grid-area: 6/1/7/2;
+  }
+  /* tamaño y formato img certificados.html */
   /* estilo imagen principal certificados.html */
   .medidas-certificados {
     width: 700px;
@@ -639,11 +789,26 @@ footer {
     display: flex;
     margin: 3% 10% 2% 25%;
   }
+  /* estilo imagen principal marketing.html */
+  .medidas-img-marketing {
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    margin: 3% 10% 2% 25%;
+    text-align: center;
+  }
   .mb-3 { /* formulario contactos margen */
     margin: 0% 20% 0% 20%;
   }
+  .banner-software {
+    background-color: white;
+    text-align: center;
+  }
   footer {
-    margin: 10% 0% 0% 0%;
+    margin: 2% 0% 0% 0%;
+    background-color: black;
+    font-size: 100%;
   }
 }
 
