@@ -117,6 +117,10 @@ main .transicion:hover { /* moviemiento boton certificados */
 main .card-text { /* tarjetas card parrafos index */
   color: #3a3a3a;
 }
+main .banner-servicios {
+  width: 100%;
+  margin: 0% 5% 6% 5%;
+}
 
 /* box model - rectangulo sobre navs {} */
 .box-model {
@@ -659,6 +663,7 @@ footer {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     list-style-type: none;
+    text-align: center;
   }
   .div1 {
     text-align: center;
@@ -779,6 +784,9 @@ footer {
   }
   .div430 {
     grid-area: 6/1/7/2;
+  }
+  .grid-marketing {
+    text-align: center;
   }
   /* tamaño y formato img certificados.html */
   /* estilo imagen principal certificados.html */

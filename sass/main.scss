@@ -38,8 +38,7 @@ body {
         h5 {
             color: $color-principal; /* color h5 carrucel */
             font-weight: bold; 
-        }
-        
+        }    
     }
 }
 
@@ -130,6 +129,10 @@ main {
     .card-text { /* tarjetas card parrafos index */
         color: #3a3a3a;
     }
+    .banner-servicios {
+        width: 100%; 
+        margin: 0% 5% 6% 5%;
+    }  
 
 }
 
@@ -608,6 +611,7 @@ footer {
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         list-style-type: none;
+        text-align: center;
         }
         
         .div1 { 
@@ -688,7 +692,12 @@ footer {
         .div427 { grid-area: 4 / 2 / 5 / 3; }
         .div428 { grid-area: 5 / 1 / 6 / 2; }
         .div429 { grid-area: 5 / 2 / 6 / 3; }
-        .div430 { grid-area: 6 / 1 / 7 / 2; }   
+        .div430 { grid-area: 6 / 1 / 7 / 2; } 
+        
+
+    .grid-marketing {
+        text-align: center;
+     } 
 
 /* tamaño y formato img certificados.html */
     @import "utilidades/certificados"; 
